@@ -4,10 +4,10 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/MeinAJ/greeter-server/greeter"
-	"github.com/MeinAJ/greeter-server/internal/config"
-	"github.com/MeinAJ/greeter-server/internal/server"
-	"github.com/MeinAJ/greeter-server/internal/svc"
+	"greeter/greeter"
+	"greeter/internal/config"
+	"greeter/internal/server"
+	"greeter/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/core/service"

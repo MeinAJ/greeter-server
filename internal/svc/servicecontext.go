@@ -1,6 +1,6 @@
 package svc
 
-import "github.com/MeinAJ/greeter-server/internal/config"
+import "greeter/internal/config"
 
 type ServiceContext struct {
 	Config config.Config

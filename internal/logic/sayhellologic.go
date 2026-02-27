@@ -3,8 +3,8 @@ package logic
 import (
 	"context"
 
-	"github.com/MeinAJ/greeter-server/greeter"
-	"github.com/MeinAJ/greeter-server/internal/svc"
+	"greeter/greeter"
+	"greeter/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )
@@ -25,5 +25,6 @@ func NewSayHelloLogic(ctx context.Context, svcCtx *svc.ServiceContext) *SayHello
 
 func (l *SayHelloLogic) SayHello(in *greeter.SayHelloReq) (*greeter.SayHelloResp, error) {
 	// todo: add your logic here and delete this line
-	return &greeter.SayHelloResp{Message: "Hello " + in.Name}, nil
+
+	return &greeter.SayHelloResp{}, nil
 }

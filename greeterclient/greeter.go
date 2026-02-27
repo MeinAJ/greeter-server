@@ -7,7 +7,7 @@ package greeterclient
 import (
 	"context"
 
-	"github.com/MeinAJ/greeter-server/greeter"
+	"greeter/greeter"
 
 	"github.com/zeromicro/go-zero/zrpc"
 	"google.golang.org/grpc"
