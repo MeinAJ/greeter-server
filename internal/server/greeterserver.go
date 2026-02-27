@@ -7,9 +7,9 @@ package server
 import (
 	"context"
 
-	"greeter-server/greeter"
-	"greeter-server/internal/logic"
-	"greeter-server/internal/svc"
+	"github.com/MeinAJ/greeter-server/greeter"
+	"github.com/MeinAJ/greeter-server/internal/logic"
+	"github.com/MeinAJ/greeter-server/internal/svc"
 )
 
 type GreeterServer struct {

@@ -3,8 +3,8 @@ package logic
 import (
 	"context"
 
-	"greeter-server/greeter"
-	"greeter-server/internal/svc"
+	"github.com/MeinAJ/greeter-server/greeter"
+	"github.com/MeinAJ/greeter-server/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

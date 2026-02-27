@@ -1,4 +1,4 @@
-module greeter-server
+module github.com/MeinAJ/greeter-server
 
 go 1.24.4
 
