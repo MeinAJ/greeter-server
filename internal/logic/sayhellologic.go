@@ -24,7 +24,7 @@ func NewSayHelloLogic(ctx context.Context, svcCtx *svc.ServiceContext) *SayHello
 }
 
 func (l *SayHelloLogic) SayHello(in *greeter.SayHelloReq) (*greeter.SayHelloResp, error) {
-	// todo: add your logic here and delete this line
-
-	return &greeter.SayHelloResp{}, nil
+	return &greeter.SayHelloResp{
+		Message: in.Name,
+	}, nil
 }
