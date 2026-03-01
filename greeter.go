@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/MeinAJ/greeter-server/internal/interceptor"
 
 	"github.com/MeinAJ/greeter-server/greeter"
 	"github.com/MeinAJ/greeter-server/internal/config"
@@ -32,6 +33,7 @@ func main() {
 			reflection.Register(grpcServer)
 		}
 	})
+	s.AddUnaryInterceptors(interceptor.MetricsInterceptor)
 	defer s.Stop()
 
 	fmt.Printf("Starting rpc server at %s...\n", c.ListenOn)
